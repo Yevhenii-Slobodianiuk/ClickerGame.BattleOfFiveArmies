@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Battle of Five Armies</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+	<!-- Main container -->
+	<div class="container">
+		<div class="topBar hide">
+			<div class="topBar__strip">
+				<div class="topBar__strip-hp"></div>
+				<p id="enemy-name">Knight</p>
+				<p id="enemy-hp">10 HP</p>
+			</div>
+			<ul class="topBar__wrapper">
+				<li id="user-name"></li>
+				<li id="user-score">
+					<img src="icons/topBar/point.svg" alt="score">
+					0 points
+				</li>
+				<li id="user-level">
+					<img src="icons/topBar/lvl.svg" alt="level">
+					1 Level
+				</li>
+			</ul>
+		</div>
+		
+		<!-- Enemy button -->
+		<button class="enemy hide">
+		</button>
+
+		<!-- Volume button -->
+		<button class="volume">
+			<img src="icons/sound/volume-off.png" alt="" class="volume">
+		</button>
+
+		<!-- Next level window -->
+		<div class="next-level hide">
+			<div class="next-level__window">
+				<h2 class="next-level__title">You win!</h2>
+				<img src="icons/next-level/stars.png" alt="stars" class="next-level__img">
+				<button class="next-level__btn">Next level</button>
+			</div>
+		</div>
+
+		<!-- Finish window -->
+		<div class="finish hide">
+			<div class="finish__window">
+				<h2 class="finish__title">You won all enemies!</h2>
+				<img src="icons/next-level/stars.png" alt="stars" class="next-level__img">
+				<button class="finish__btn">Finish game</button>
+			</div>
+		</div>
+		
+		<!-- Registration form -->
+		<form action="#" class="registration" id="registration-form">
+			<h1 class="registration__title">Registration</h1>
+	
+			<div class="registration__group">
+				<input type="text" class="registration__input" placeholder=" " name="name" id="registration-name">
+				<label for="" class="registration__label">Name</label>
+			</div>
+	
+			<div class="registration__group">
+				<input type="Email" class="registration__input" placeholder=" " name="email" id="registration-email">
+				<label for="" class="registration__label">Email</label>
+			</div>
+	
+			<button type="submit" class="registration__btn">Registration</button>
+		</form>
+
+	</div>
+
+	<script src="js/script.js"></script>
+</body>
+</html>
